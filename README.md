@@ -1,11 +1,202 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# RentHub Uganda 🏠
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A comprehensive rental property management platform built for Uganda, connecting landlords and tenants with powerful administrative tools.
+
+## 🌟 Features
+
+### For Tenants
+- **Property Search**: Browse available properties with advanced filtering
+- **Location-based Search**: Find properties in specific Ugandan cities
+- **Price Range Filtering**: Search within your budget
+- **Property Details**: View detailed information, images, and contact landlords
+
+### For Landlords
+- **Property Management**: Add, edit, and manage your property listings
+- **Dashboard**: Track your properties and their status
+- **Image Upload**: Showcase properties with high-quality images
+- **Status Tracking**: Monitor approval status of your listings
+
+### For Administrators
+- **User Management**: Manage all platform users and their roles
+- **Property Approval**: Review and approve/reject property listings
+- **Analytics Dashboard**: Platform statistics and insights
+- **Content Moderation**: Ensure quality and appropriate content
+
+## 🚀 Technology Stack
+
+- **Backend**: Laravel 11 (PHP)
+- **Frontend**: Blade Templates + Tailwind CSS
+- **Database**: SQLite (easily configurable to MySQL/PostgreSQL)
+- **Authentication**: Laravel Breeze
+- **File Storage**: Laravel Storage with public disk
+- **Styling**: Tailwind CSS with custom components
+
+## 📱 User Roles
+
+1. **Tenant**: Can search and view properties
+2. **Landlord**: Can list and manage properties
+3. **Admin**: Full platform management capabilities
+
+## 🛠️ Installation
+
+### Prerequisites
+- PHP 8.2+
+- Composer
+- Node.js & NPM
+- Git
+
+### Setup Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/homefinder00/renthub.ug.git
+   cd renthub.ug
+   ```
+
+2. **Install PHP dependencies**
+   ```bash
+   composer install
+   ```
+
+3. **Install Node.js dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Environment setup**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+5. **Database setup**
+   ```bash
+   touch database/database.sqlite
+   php artisan migrate
+   php artisan db:seed
+   ```
+
+6. **Storage setup**
+   ```bash
+   php artisan storage:link
+   ```
+
+7. **Build assets**
+   ```bash
+   npm run build
+   ```
+
+8. **Start the server**
+   ```bash
+   php artisan serve
+   ```
+
+Visit `http://localhost:8000` to see the application.
+
+## 🏗️ Project Structure
+
+```
+app/
+├── Http/Controllers/
+│   ├── AdminController.php          # Admin panel functionality
+│   ├── PropertyController.php       # Property CRUD operations
+│   └── Auth/                       # Authentication controllers
+├── Models/
+│   ├── User.php                    # User model with roles
+│   └── Property.php                # Property model
+└── Requests/                       # Form request validation
+
+resources/views/
+├── admin/                          # Admin panel views
+├── properties/                     # Property management views
+├── auth/                          # Authentication views
+└── layouts/                       # Layout templates
+
+database/
+├── migrations/                     # Database migrations
+├── seeders/                       # Data seeders
+└── database.sqlite                # SQLite database file
+```
+
+## 🎨 Key Features Implementation
+
+### Property Management
+- Image upload and storage
+- Status workflow (pending → approved/rejected)
+- Search and filtering capabilities
+- Responsive grid layout
+
+### User Authentication
+- Role-based access control
+- Registration with role selection
+- Profile management
+- Secure authentication flow
+
+### Admin Panel
+- User management with role changes
+- Property approval workflow
+- Platform analytics
+- Comprehensive dashboard
+
+## 🔧 Configuration
+
+### Database
+The application uses SQLite by default. To use MySQL or PostgreSQL:
+
+1. Update `.env` file:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=renthub
+   DB_USERNAME=your_username
+   DB_PASSWORD=your_password
+   ```
+
+2. Run migrations:
+   ```bash
+   php artisan migrate:fresh --seed
+   ```
+
+### File Storage
+Images are stored in `storage/app/public/properties/`. The storage is linked to `public/storage/`.
+
+## 🌍 Uganda-Specific Features
+
+- **Local Currency**: Prices displayed in Ugandan Shillings (UGX)
+- **Ugandan Locations**: Pre-configured with major Ugandan cities and areas
+- **Local Context**: UI and content tailored for the Ugandan market
+
+## 👥 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open-sourced software licensed under the [MIT license](LICENSE).
+
+## 🤝 Support
+
+For support and questions:
+- Open an issue on GitHub
+- Contact: [Your contact information]
+
+## 🎯 Roadmap
+
+- [ ] Mobile app development
+- [ ] Payment integration (Mobile Money)
+- [ ] Map integration
+- [ ] Advanced property analytics
+- [ ] Tenant-Landlord messaging system
+- [ ] Property maintenance tracking
+
+---
+
+**Built with ❤️ for Uganda's rental market**
 
 ## About Laravel
 
