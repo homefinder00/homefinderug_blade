@@ -1,4 +1,4 @@
-{{-- RentHub Logo - Properly styled for different contexts --}}
+{{-- HomeFinder Logo - Properly styled for different contexts --}}
 <img src="{{ asset('images/image.png') }}" 
-     alt="RentHub" 
+     alt="HomeFinder" 
      {{ $attributes->merge(['class' => 'block h-auto max-h-12 w-auto object-contain']) }}>

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Home Finder'),
+    'name' => env('APP_NAME', 'HomeFinder'),
 
     /*
     |--------------------------------------------------------------------------

@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ config('app.name', 'RentHub') }} - Find Your Perfect Home in Uganda</title>
+        <meta name="description" content="HomeFinder Uganda - Find your perfect rental property in Uganda. Connect with trusted landlords and discover quality homes across Kampala, Entebbe, and beyond.">
+        <meta name="keywords" content="Uganda rentals, property finder, homes for rent, apartments Uganda, houses for rent Kampala">
+        <title>{{ config('app.name', 'HomeFinder') }} - Find Your Perfect Home in Uganda</title>
         
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -51,7 +53,7 @@
                     <!-- Logo -->
                     <div class="flex items-center">
                         <x-application-logo class="h-10 w-auto" />
-                        <span class="ml-2 text-xl font-bold text-gray-900">RentHub Uganda</span>
+                        <span class="ml-2 text-xl font-bold text-gray-900">HomeFinder Uganda</span>
                     </div>
                     
                     <!-- Navigation Links -->
@@ -160,7 +162,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                        Why Choose RentHub?
+                        Why Choose HomeFinder?
                     </h2>
                     <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                         We make finding and listing rental properties simple, secure, and efficient.
@@ -299,7 +301,7 @@
                     Ready to Find Your Next Home?
                 </h2>
                 <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                    Join thousands of Ugandans who have found their perfect rental properties through RentHub.
+                    Join thousands of Ugandans who have found their perfect rental properties through HomeFinder.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="{{ route('properties.index') }}" 
@@ -322,7 +324,7 @@
                     <div class="col-span-1 md:col-span-2">
                         <div class="flex items-center mb-4">
                             <x-application-logo class="h-8 w-auto" />
-                            <span class="ml-2 text-xl font-bold">RentHub</span>
+                            <span class="ml-2 text-xl font-bold">HomeFinder</span>
                         </div>
                         <p class="text-gray-400 mb-4">
                             Uganda's premier rental property platform. Connecting landlords and tenants across the country with verified, quality properties.
@@ -359,14 +361,14 @@
                         <ul class="space-y-2">
                             <li class="text-gray-400">Kampala, Uganda</li>
                             <li class="text-gray-400">+256 123 456 789</li>
-                            <li class="text-gray-400">hello@renthub.ug</li>
+                            <li class="text-gray-400">hello@homefinder.ug</li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="border-t border-gray-800 mt-8 pt-8 text-center">
                     <p class="text-gray-400">
-                        © {{ date('Y') }} RentHub Uganda. All rights reserved.
+                        © {{ date('Y') }} HomeFinder Uganda. All rights reserved.
                     </p>
                 </div>
             </div>

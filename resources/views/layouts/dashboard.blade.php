@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'RentHub') }} - Dashboard</title>
+        <title>{{ config('app.name', 'HomeFinder') }} - Dashboard</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -33,7 +33,7 @@
                         <!-- Logo + App Name -->
                         <div class="flex items-center space-x-3">
                             <x-application-logo class="h-8 w-auto" />
-                            <h1 class="text-xl font-bold text-gray-900">RentHub</h1>
+                            <h1 class="text-xl font-bold text-gray-900">HomeFinder</h1>
                         </div>
                     </div>
 

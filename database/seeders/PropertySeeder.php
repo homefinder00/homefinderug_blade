@@ -17,7 +17,7 @@ class PropertySeeder extends Seeder
         // Create admin user
         $admin = User::factory()->admin()->create([
             'name' => 'Admin User',
-            'email' => 'admin@renthub.com',
+            'email' => 'admin@homefinder.com',
             'phone' => '+256700000000',
         ]);
 

@@ -1,4 +1,4 @@
-# RentHub Uganda 🏠
+# HomeFinder Uganda 🏠
 
 A comprehensive rental property management platform built for Uganda, connecting landlords and tenants with powerful administrative tools.
 
@@ -148,7 +148,7 @@ The application uses SQLite by default. To use MySQL or PostgreSQL:
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   DB_DATABASE=renthub
+   DB_DATABASE=homefinder
    DB_USERNAME=your_username
    DB_PASSWORD=your_password
    ```
