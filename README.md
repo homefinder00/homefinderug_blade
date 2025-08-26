@@ -49,8 +49,8 @@ A comprehensive rental property management platform built for Uganda, connecting
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/homefinder00/renthub.ug.git
-   cd renthub.ug
+   git clone https://github.com/homefinder00/homefinderug_blade.git
+   cd homefinderug_blade
    ```
 
 2. **Install PHP dependencies**
